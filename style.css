@@ -1,6 +1,14 @@
+:root {
+    --main-color: white;
+    --accent-color1: #0AA713;
+    --accent-color2: #1FDA2A;
+}
+
 * {
     max-width: 97.5vw;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 header {
     display: flex;
@@ -9,8 +17,19 @@ header {
     position: sticky;
 }
 
+.text-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    background-color: rgb(63, 63, 63);
+}
+
 video {
-    width: 100vw;
+    width: 90vw;
+    border-radius: 15px;
+    border: 3px solid #1FDA2A;
+    padding: 3px;
 }
 
 #logo {
@@ -45,6 +64,10 @@ video {
     padding: 2rem;
     color: white;
     font-size: 3rem;
+}
+
+li :hover {
+    color: #1FDA2A;
 }
 
 #nav-menu li ul{
