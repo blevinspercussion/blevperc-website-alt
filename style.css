@@ -1,7 +1,12 @@
+* {
+    max-width: 97.5vw;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
 }
 
 video {
@@ -37,4 +42,14 @@ nav ul {
 
 .sub-menu li {
     margin: 0px 15px 0px -15px;
+}
+
+.hamburger-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hamburger {
+    width: 45px;
 }

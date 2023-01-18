@@ -13,11 +13,8 @@ function createSubMenu(parentElement, ulID, ...elements) {
         newLI.className = "li-" + elements[i];
         newLI.textContent = elements[i];
         newUL.appendChild(newLI);
-        console.log(newLI);
     }
     parentElement.appendChild(newUL);
-    console.log(newUL);
-    console.log(parentElement);
 }
 
 // Creat sub menus
