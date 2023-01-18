@@ -22,27 +22,37 @@ function createSubMenu(parentElement, ulID, ...elements) {
     parentElement.appendChild(newUL);
 }
 
+function deleteSubMenu(element) {
+    while (element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+}
+
 // Creat sub menus
-menuServices.addEventListener("click", () => {
+menuServices.addEventListener("mouseover", () => {
     document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
 })
 
-// hamburger.addEventListener("click", () => {
-//     console.log(navMenu.style.visibility);
-//     if (navMenu.style.visibility === "hidden"){
-//         navMenu.style.visibility = "visible";
-//     } else if (navMenu.style.visibility === "visible") {
-//         navMenu.style.visibility = "hidden";
-//     }
+menuServices.addEventListener("mouseleave", () => {
+    deleteSubMenu(document.getElementById("services-sub-menu"));
+    menuServices.addEventListener("mouseover", () => {
+        document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
+    })
+})
 
-//     navMenu.style.visibility === "hidden" ? navMenu.style.visibility = "visible" : navMenu.style.visibility = "hidden"
+// hamburger.addEventListener("click", () => {
+//     if (navMenu.style.visibility === 'visible') {
+//         navMenu.style.visibility = 'visible';
+//     } else {
+//         navMenu.style.visibility = 'hidden';
+//     }
 // })
 
 hamburger.addEventListener("click", () => {
-    console.log('hamburger clicked');
-    if (navMenu.style.visibility != 'visible') {
-        navMenu.style.visibility = 'visible';
+    if (navMenu.classList.contains("active")) {
+        navMenu.classList.remove("active")
     } else {
-        navMenu.style.visibility = 'hidden';
+        navMenu.classList.add("active")
     }
 })
+

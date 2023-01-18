@@ -19,12 +19,32 @@ video {
 }
 
 #nav-menu {
-    visibility: hidden;
+    visibility: visible;
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin-right: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 75vh;
+    width: 75vw;
+    /* right: -10vw; */
+    right: -90vw;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+#nav-menu.active {
+    right: -10vw;
+    transition: 0.5s
+}
+
+#nav-menu li {
+    padding: 2rem;
+    color: white;
+    font-size: 3rem;
 }
 
 #nav-menu li ul{
