@@ -18,12 +18,19 @@ video {
     margin: -125px;
 }
 
-nav ul {
+#nav-menu {
+    visibility: hidden;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-right: 50px;
+}
+
+#nav-menu li ul{
+    list-style: none;
+    position: absolute;
+    top: 22vh;
 }
 
 .sub-menu {
@@ -50,6 +57,6 @@ nav ul {
     justify-content: end;
 }
 
-.hamburger {
+#hamburger {
     width: 45px;
 }
