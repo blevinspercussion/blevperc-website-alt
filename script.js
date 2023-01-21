@@ -9,7 +9,6 @@ console.log(navMenu.style.visibility);
 
 // Function to create sub menus
 function createSubMenu(parentElement, ulID, ...elements) {
-    console.log("mouseover");
     const newUL = document.createElement("ul");
     newUL.id = ulID;
     newUL.className = "sub-menu";
@@ -29,16 +28,16 @@ function deleteSubMenu(element) {
 }
 
 // Creat sub menus
-menuServices.addEventListener("mouseover", () => {
+menuServices.addEventListener("click", () => {
     document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
 })
 
-menuServices.addEventListener("mouseleave", () => {
-    deleteSubMenu(document.getElementById("services-sub-menu"));
-    menuServices.addEventListener("mouseover", () => {
-        document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
-    })
-})
+// menuServices.addEventListener("mouseleave", () => {
+//     deleteSubMenu(document.getElementById("services-sub-menu"));
+//     menuServices.addEventListener("mouseover", () => {
+//         document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
+//     })
+// })
 
 // hamburger.addEventListener("click", () => {
 //     if (navMenu.style.visibility === 'visible') {
@@ -55,4 +54,3 @@ hamburger.addEventListener("click", () => {
         navMenu.classList.add("active")
     }
 })
-

@@ -2,6 +2,10 @@
     --main-color: white;
     --accent-color1: #0AA713;
     --accent-color2: #1FDA2A;
+    --neutral: #efefef;
+    --watermelon: #ff3b3f;
+    --carbon: #a9a9a9;
+    --sky: #caebf2;
 }
 
 * {
@@ -12,7 +16,8 @@
 
 body {
     overflow-x: hidden;
-    width: 97.5vw;
+    /* width: 97.5vw; */
+    background-color: var(--neutral)
 }
 
 
@@ -20,8 +25,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    /* position: sticky; */
     overflow-y: hidden;
+    overflow-x: hidden;
+    margin: -3rem 0 -3rem 0;
 }
 
 .text-div {
@@ -29,7 +36,10 @@ header {
     align-items: center;
     justify-content: center;
     font-size: large;
-    background-color: rgb(63, 63, 63);
+    background-color: var(--carbon);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 4vw;
 }
 
 video {
@@ -42,7 +52,8 @@ video {
 #logo {
     width: 200px;
     /* margin: -60px 0px -50px 0px; */
-    margin: -7vh -2vw -7vh 0;
+    /* margin: -7vh -2vw -7vh 0; */
+    border-radius: 5px;
 }
 
 #nav-menu {
@@ -50,7 +61,7 @@ video {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin-right: 50px;
     position: absolute;
@@ -93,7 +104,7 @@ li :hover {
     position: absolute;
     top: 16vh;
     left: 15vw;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--carbon);
     border-radius: 5%;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
 }
@@ -112,4 +123,23 @@ li :hover {
 
 #hamburger {
     width: 45px;
+}
+
+#arrow-icon {
+    width: 45px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    left: 275px;
+    top: -25px;
+    margin-bottom: -100px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
