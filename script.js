@@ -1,11 +1,10 @@
 // Get DOM Elements 
+const body = document.querySelector("body");
 const menuServices = document.getElementById("menu-services");
 const menuBio = document.getElementById("menu-bio");
 const menuContact = document.getElementById("menu-contact");
 const navMenu = document.getElementById("nav-menu");
 const hamburger = document.getElementById("hamburger");
-
-console.log(navMenu.style.visibility);
 
 // Function to create sub menus
 function createSubMenu(parentElement, ulID, ...elements) {
@@ -35,21 +34,6 @@ function deleteSubMenu(element) {
 menuServices.addEventListener("click", () => {
     document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
 })
-
-// menuServices.addEventListener("mouseleave", () => {
-//     deleteSubMenu(document.getElementById("services-sub-menu"));
-//     menuServices.addEventListener("mouseover", () => {
-//         document.getElementById("services-sub-menu") === null ? createSubMenu(menuServices, "services-sub-menu", "lessons", "live performance", "studio") : document.getElementById("services-sub-menu").remove()
-//     })
-// })
-
-// hamburger.addEventListener("click", () => {
-//     if (navMenu.style.visibility === 'visible') {
-//         navMenu.style.visibility = 'visible';
-//     } else {
-//         navMenu.style.visibility = 'hidden';
-//     }
-// })
 
 hamburger.addEventListener("click", () => {
     if (navMenu.classList.contains("active")) {

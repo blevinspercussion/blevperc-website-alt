@@ -108,9 +108,8 @@ li :hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    /* top: -10vh;
-    left: 15vw; */
+    /* position: fixed; */
+    margin-top: -5rem;
     background-color: var(--carbon);
     border-radius: 5%;
     /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
@@ -123,7 +122,7 @@ li a {
 
 
 .sub-menu li {
-    margin: 0px 15px 0px -15px;
+    margin: 0px 0px 0px -15px;
 }
 
 .hamburger-div {
