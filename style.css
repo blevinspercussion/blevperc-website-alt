@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center; */
     overflow-x: hidden;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .logo {
@@ -12,6 +13,9 @@ body {
 .container {
     max-width: 1000px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -20,6 +24,8 @@ header {
     align-items: center;
     justify-content: space-between;
     max-height: 10em;
+    max-width: 1000px;
+    min-width: 750px;
 }
 
 ul {
@@ -32,18 +38,25 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: black;
+    border-radius: 15px;
     color: white;
     padding: 1em;
     margin: 1em;
-    min-width: 10em;
-    min-height: 10em;
-    max-height: 100em;
+    min-width: 6em;
+    /* min-height: 10em;
+    max-height: 100em; */
+    height: 100vh;
     font-size: 2em;
+    overflow: scroll;
+}
+
+nav ul li {
+    margin: 3em;
 }
 
 .nav-hidden {
     position: fixed;
-    right: -500px;
+    right: -600px;
     transition: 0.5s;
 }
 
@@ -51,4 +64,19 @@ nav {
     position: fixed;
     right: -2em;
     transition: 0.5s;
+}
+
+.video-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+video {
+    max-width: 1000px;
+}
+
+
+.attention-text {
+    color: rgb(255, 0, 0);
 }
