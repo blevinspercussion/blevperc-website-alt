@@ -4,6 +4,7 @@ body {
     align-items: center; */
     overflow-x: hidden;
     font-family: 'Source Code Pro', monospace;
+    height: fit-content;
 }
 
 .logo {
@@ -75,9 +76,18 @@ nav ul li {
 
 video {
     max-width: 1000px;
+    border-radius: 15px;
 }
 
 
 .attention-text {
     color: rgb(255, 0, 0);
+}
+
+.main-content {
+    background-color: rgba(42, 0, 42, 0.247);
+    padding: 1em;
+    margin: 2em;
+    border-radius: 15px;
+    font-size: 1.25em;
 }
