@@ -2,6 +2,7 @@ body {
     /* display: flex;
     flex-direction: column;
     align-items: center; */
+    overflow-x: hidden;
 }
 
 .logo {
@@ -10,6 +11,7 @@ body {
 
 .container {
     max-width: 1000px;
+    overflow: hidden;
 }
 
 header {
@@ -18,4 +20,35 @@ header {
     align-items: center;
     justify-content: space-between;
     max-height: 10em;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    min-width: 10em;
+    min-height: 10em;
+    max-height: 100em;
+    font-size: 2em;
+}
+
+.nav-hidden {
+    position: fixed;
+    right: -500px;
+    transition: 0.5s;
+}
+
+.nav-shown {
+    position: fixed;
+    right: -2em;
+    transition: 0.5s;
 }
