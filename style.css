@@ -15,7 +15,10 @@
 }
 
 body {
-    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     /* width: 97.5vw; */
     background-color: var(--neutral)
 }
@@ -31,7 +34,7 @@ header {
     margin: -3rem 0 -3rem 0;
 }
 
-.text-div {
+.text-body p {
     display: flex;
     align-items: center;
     justify-content: center;
