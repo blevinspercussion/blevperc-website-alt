@@ -11,27 +11,31 @@
 * {
     /* width: 97.5vw; */
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-body {
+html, body {
     margin: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
     /* width: 97.5vw; */
-    background-color: var(--neutral)
+    background-color: var(--neutral);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* position: sticky; */
     overflow-y: hidden;
     overflow-x: hidden;
-    margin: -3rem 0 -3rem 0;
+    margin: -15rem 0 -3rem 0;
 }
 
 .text-body p {
@@ -48,15 +52,15 @@ header {
 video {
     width: 90vw;
     border-radius: 15px;
-    padding: 3px;
-    margin-left: 13px;
+    /* padding: 3px; */
+    /* margin-left: 13px; */
 }
 
 #logo {
     width: 200px;
     /* margin: -60px 0px -50px 0px; */
     /* margin: -7vh -2vw -7vh 0; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 #nav-menu {
@@ -105,13 +109,17 @@ li :hover {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 16vh;
-    left: 15vw;
+    /* top: -10vh;
+    left: 15vw; */
     background-color: var(--carbon);
     border-radius: 5%;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5); */
 }
 
+li a {
+    text-decoration: none;
+    color: white;
+}
 
 
 .sub-menu li {
@@ -121,7 +129,7 @@ li :hover {
 .hamburger-div {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 #hamburger {

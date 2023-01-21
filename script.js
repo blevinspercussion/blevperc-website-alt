@@ -14,9 +14,13 @@ function createSubMenu(parentElement, ulID, ...elements) {
     newUL.className = "sub-menu";
     for (let i=0; i<elements.length; i++) {
         let newLI = document.createElement("li");
+        let newA = document.createElement("a");
         newLI.className = "li-" + elements[i];
-        newLI.textContent = elements[i];
+        newA.className = "link-" + elements[i];
+        newA.textContent = elements[i];
+        newA.href = "./" + elements[i] + ".html";
         newUL.appendChild(newLI);
+        newLI.appendChild(newA);
     }
     parentElement.appendChild(newUL);
 }
