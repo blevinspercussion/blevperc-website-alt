@@ -17,7 +17,7 @@ class Header extends HTMLElement {
                             <li><a href="./lessons.html">Lessons</a></li>
                             <li><a href="./live.html">Live</a></li>
                             <li><a href="./studio.html">Studio</a></li>
-                            <li>Media</li>
+                            <li><a href="./media.html">Media</a></li>
                             <li>About</li>
                             <li class="attention-text">Hire Me!</li>
                         </ul>
