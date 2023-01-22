@@ -9,7 +9,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <header>
-                <img class="logo" src="./media/pics/logo.png">
+                <a href="./index.html"><img class="logo" src="./media/pics/logo.png"></a>
                 <div>
                     <img id="hamburger" src="./media/icons/icons8-menu-rounded-30.png">
                     <nav class="nav-hidden">
