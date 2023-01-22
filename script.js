@@ -27,7 +27,21 @@ class Header extends HTMLElement {
     }
 }
 
+class Footer extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML = `
+            <p>
+                Website design for blevinspercussion.com copyright &copy; 2023 AdamB Codes, <a href="https://adamb.codes">adamb.codes</a>
+            </p>    
+        `
+    }
+}
+
 customElements.define('my-header', Header);
+customElements.define('my-footer', Footer);
 
 const body = document.querySelector('body');
 const hamburger = document.getElementById('hamburger');
