@@ -15,7 +15,7 @@ class Header extends HTMLElement {
                     <nav class="nav-hidden">
                         <ul class="submenu">
                             <li><a href="./lessons.html">Lessons</a></li>
-                            <li>Live</li>
+                            <li><a href="./live.html">Live</a></li>
                             <li>Studio</li>
                             <li>Media</li>
                             <li>About</li>
