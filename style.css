@@ -109,3 +109,7 @@ a {
 a :hover {
     color: black;
 }
+
+.main-image {
+    border-radius: 15px;
+}
