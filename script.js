@@ -50,6 +50,20 @@ const body = document.querySelector('body');
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('nav');
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
 // Event handlers
 function handleSlideMenu() {
     if (navMenu.classList.contains('nav-hidden')) {
@@ -65,3 +79,4 @@ function handleSlideMenu() {
 hamburger.addEventListener("click", () => {
     handleSlideMenu();
 });
+
