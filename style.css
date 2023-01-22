@@ -80,6 +80,7 @@ nav ul li {
 video {
     width: 90vw;
     border-radius: 15px;
+    z-index: -1;
 }
 
 
@@ -98,4 +99,13 @@ video {
     border-radius: 15px;
     font-size: 1.25em;
     width: 90vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a :hover {
+    color: black;
 }

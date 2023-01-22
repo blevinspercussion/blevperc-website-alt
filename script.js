@@ -1,6 +1,7 @@
+//////////////////////////////////////////////
+// Define custom elements/web components   ///
+//////////////////////////////////////////////
 
-
-// Define custom elements/web components
 class Header extends HTMLElement {
     constructor() {
         super();
@@ -13,7 +14,7 @@ class Header extends HTMLElement {
                     <img id="hamburger" src="./media/icons/icons8-menu-rounded-30.png">
                     <nav class="nav-hidden">
                         <ul class="submenu">
-                            <li>Lessons</li>
+                            <li><a href="./lessons.html">Lessons</a></li>
                             <li>Live</li>
                             <li>Studio</li>
                             <li>Media</li>
@@ -34,19 +35,22 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <p>
-                Website design for blevinspercussion.com copyright &copy; 2023 AdamB Codes, <a href="https://adamb.codes">adamb.codes</a>
+                Website design for blevinspercussion.com copyright &copy; 2023 Adam B. Codes, <a href="https://adamb.codes">adamb.codes</a>
             </p>    
         `
     }
 }
 
+// Define custom elements
 customElements.define('my-header', Header);
 customElements.define('my-footer', Footer);
 
+// Define variables for DOM elements
 const body = document.querySelector('body');
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('nav');
 
+// Event handlers
 function handleSlideMenu() {
     if (navMenu.classList.contains('nav-hidden')) {
         navMenu.classList.remove('nav-hidden');
@@ -57,6 +61,7 @@ function handleSlideMenu() {
     }
 }
 
+// Event listeners
 hamburger.addEventListener("click", () => {
     handleSlideMenu();
 });
