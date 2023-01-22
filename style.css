@@ -1,10 +1,11 @@
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     overflow-x: hidden;
     font-family: 'Source Code Pro', monospace;
-    height: fit-content;
+    /* height: fit-content; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 
 .logo {
@@ -12,21 +13,23 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    flex-direction: column;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-height: 10em;
-    max-width: 1000px;
-    min-width: 750px;
+    width: 90vw;
+    /* max-height: 10em;
+    max-width: 1000px; */
+    /* min-width: 700px; */
 }
 
 ul {
@@ -75,7 +78,7 @@ nav ul li {
 }
 
 video {
-    max-width: 1000px;
+    width: 90vw;
     border-radius: 15px;
 }
 
@@ -85,9 +88,14 @@ video {
 }
 
 .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(42, 0, 42, 0.247);
     padding: 1em;
-    margin: 2em;
+    margin: 5vh 0 0 0;
     border-radius: 15px;
     font-size: 1.25em;
+    width: 90vw;
 }
