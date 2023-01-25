@@ -2,7 +2,7 @@
 // Define custom elements/web components   ///
 //////////////////////////////////////////////
 
-class Header extends HTMLElement {
+class MobileHeader extends HTMLElement {
     constructor() {
         super();
     }
@@ -42,7 +42,7 @@ class Footer extends HTMLElement {
 }
 
 // Define custom elements
-customElements.define('my-header', Header);
+customElements.define('mobile-header', MobileHeader);
 customElements.define('my-footer', Footer);
 
 // Define variables for DOM elements
