@@ -8,7 +8,7 @@ class MobileHeader extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-            <header>
+            <header id='mobile-header'>
                 <a href="./index.html"><img class="logo" src="./media/pics/logo.png"></a>
                 <div>
                     <img id="hamburger" src="./media/icons/icons8-menu-rounded-30.png">
@@ -28,6 +28,18 @@ class MobileHeader extends HTMLElement {
     }
 }
 
+class DesktopHeader extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML = `
+        
+        
+        `
+    }
+}
+
 class Footer extends HTMLElement {
     constructor() {
         super();
@@ -43,6 +55,7 @@ class Footer extends HTMLElement {
 
 // Define custom elements
 customElements.define('mobile-header', MobileHeader);
+customElements.defire('desktop-header', DesktopHeader);
 customElements.define('my-footer', Footer);
 
 // Define variables for DOM elements
