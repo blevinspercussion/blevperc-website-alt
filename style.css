@@ -62,7 +62,7 @@ iframe {
 .hidden {
     opacity: 0;
     transition: all 1s;
-    transform: translateX(-100%);
+    transform: translateY(100%);
     filter: blur(5px);
 }
 
@@ -74,7 +74,7 @@ iframe {
 
 .show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
     filter: blur(0);
 }
 
@@ -338,4 +338,7 @@ a {
         height: 17vh;
     }
 
+    .media-pic {
+        max-height: 300px;
+    }
 }
