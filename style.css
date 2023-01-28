@@ -13,6 +13,14 @@ body {
     justify-content: center; */
 }
 
+#banner {
+    min-width: 100%;
+}
+
+.banner-container {
+    min-width: 100vw;
+}
+
 #desktop-header-container {
     display: none;
 }
@@ -209,6 +217,10 @@ a {
     #desktop-header-container {
         display: block;
         margin-top: 10vh;
+    }
+
+    .banner-container {
+        display: none;
     }
     
     #desktop-header {
