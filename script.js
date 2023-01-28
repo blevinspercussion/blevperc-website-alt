@@ -76,6 +76,40 @@ class DesktopHeader extends HTMLElement {
     }
 }
 
+class AbbreviatedHeader extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        this.innerHTML = `
+        <header id="desktop-header">
+        <div class="empty-div"></div>
+        <div class="title-div">
+            <a href="./index.html"><img class="logo" src="./media/pics/Blevins Percussion-logos_white.png"></a>
+            <h3>North Georgia's spot for expert drum lessons</h3>
+        </div>    
+        <div class="vl"></div>
+        <div class="title-div">
+            <div>
+                <h3>(706) 623 - 3786</h3>
+                <h3>blevinspercussion@gmail.com</h3>
+            </div>
+        </div>
+        <div class="empty-div"></div>
+    </header>
+    <nav class="abb-nav">
+        <ul>
+            <li><a class="abb-nav-text" href="./lessons.html">lessons</a></li>
+            <li><a class="abb-nav-text" href="./live.html">live</a></li>
+            <li><a class="abb-nav-text" href="./studio.html">studio</a></li>
+            <li><a class="abb-nav-text" href="./media.html">media</a></li>
+            <li><a class="abb-nav-text" href="./about.html">about</a></li>
+        </ul>
+    </nav>
+        `
+    }
+}
+
 class Footer extends HTMLElement {
     constructor() {
         super();
@@ -92,6 +126,7 @@ class Footer extends HTMLElement {
 // Define custom elements
 customElements.define('mobile-header', MobileHeader);
 customElements.define('desktop-header', DesktopHeader);
+customElements.define('abb-header', AbbreviatedHeader);
 customElements.define('my-footer', Footer);
 
 // Define variables for DOM elements

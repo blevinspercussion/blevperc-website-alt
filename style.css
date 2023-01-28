@@ -218,6 +218,29 @@ a {
         overflow: hidden;
     }
 
+    .abb-nav-text {
+        display: inline-block;
+        position: relative;
+    }
+
+    .abb-nav-text:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--accent1);
+        transform-origin: center;
+        transition: transform 0.25s ease-out;
+    }
+
+    .abb-nav-text:hover:after {
+        transform: scaleX(1);
+        transform-origin: center;
+    }
+
     nav ul {
         display: flex;
         align-items: center;
