@@ -24,7 +24,6 @@ class MobileHeader extends HTMLElement {
                     </nav>
                 </div>
             </header>
-            <section class="video-div">
 
         </section>
     `
