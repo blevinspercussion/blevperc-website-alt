@@ -23,9 +23,7 @@ class MobileHeader extends HTMLElement {
                     </nav>
                 </div>
             </header>
-            <div class="container banner-container">
-            <img id="banner" src="./media/pics/banner.jpg"></img>
-            </div>
+            
     `
     }
 }
