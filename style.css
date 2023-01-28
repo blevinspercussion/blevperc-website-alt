@@ -133,8 +133,7 @@ nav {
     padding: 1em;
     margin: 1em;
     min-width: 6em;
-    /* min-height: 10em;
-    max-height: 100em; */
+    max-width: 80vw;
     max-height: fit-content;
     font-size: 2em;
     overflow: scroll;
@@ -191,7 +190,7 @@ video {
     margin: 5vh 0 0 0;
     border-radius: 15px;
     font-size: 1.25em;
-    width: 90vw;
+    width: 80vw;
     border: 2px solid var(--accent1);
 }
 
