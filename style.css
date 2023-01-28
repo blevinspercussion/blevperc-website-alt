@@ -17,6 +17,10 @@ body {
     display: none;
 }
 
+#desktop-header {
+    display: none;
+}
+
 p {
     color: white;
 }
