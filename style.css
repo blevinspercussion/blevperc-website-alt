@@ -213,6 +213,7 @@ a {
         align-items: center;
         justify-content: center;
         width: 90vw;
+        min-height: 25vh;
         margin: auto;
         border: none;
         overflow: hidden;
