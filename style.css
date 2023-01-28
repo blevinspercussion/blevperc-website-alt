@@ -294,7 +294,7 @@ a {
     }
 
     .logo:hover {
-        filter: drop-shadow(15px 15px 20px green);
+        filter: drop-shadow(5px 5px 5px white);
     }
 
     #hamburger {
