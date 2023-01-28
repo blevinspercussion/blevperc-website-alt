@@ -14,7 +14,7 @@ body {
 }
 
 #desktop-header-container {
-    visibility: hidden;
+    display: none;
 }
 
 p {
@@ -195,15 +195,16 @@ a {
 @media screen and (min-width: 1000px) {
 
     #mobile-header {
-        visibility: hidden;
+        display: none;
     }
 
     #desktop-header-container {
-        visibility: visible;
+        display: block;
+        margin-top: 10vh;
     }
     
     #desktop-header {
-        visibility: visible;
+        display: block;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -223,6 +224,10 @@ a {
         margin: auto;
         border: none;
         overflow: hidden;
+    }
+
+    .nav-hidden {
+        display: none;
     }
 
     .abb-nav-text {
@@ -286,6 +291,10 @@ a {
     .logo {
         margin-bottom: -7em;
         margin-top: -5em;
+    }
+
+    .logo:hover {
+        filter: drop-shadow(15px 15px 20px green);
     }
 
     #hamburger {

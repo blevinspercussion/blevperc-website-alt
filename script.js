@@ -9,7 +9,7 @@ class MobileHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <header id='mobile-header'>
-                <a href="./index.html"><img class="logo" src="./media/pics/logo.png"></a>
+                <a href="./index.html"><img class="logo" src="./media/pics/Blevins Percussion-logos_white.png"></a>
                 <div>
                     <img id="hamburger" src="./media/icons/icons8-menu-rounded-30.png">
                     <nav class="nav-hidden">
@@ -24,6 +24,9 @@ class MobileHeader extends HTMLElement {
                     </nav>
                 </div>
             </header>
+            <section class="video-div">
+
+        </section>
     `
     }
 }
