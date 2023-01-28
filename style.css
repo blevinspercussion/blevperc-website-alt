@@ -213,6 +213,10 @@ a {
         display: none;
     }
 
+    header {
+        width: 100vw;
+    }
+
     #desktop-header-container {
         display: block;
         margin-top: 10vh;
