@@ -34,7 +34,43 @@ class DesktopHeader extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-        
+        <header id="desktop-header">
+        <div class="empty-div"></div>
+        <div class="title-div">
+            <a href="./index.html"><img class="logo" src="./media/pics/Blevins Percussion-logos_white.png"></a>
+            <h3>North Georgia's spot for expert drum lessons</h3>
+        </div>    
+        <div class="vl"></div>
+        <div class="title-div">
+            <div>
+                <h3>(706) 623 - 3786</h3>
+                <h3>blevinspercussion@gmail.com</h3>
+            </div>
+        </div>
+        <div class="empty-div"></div>
+    </header>
+
+        <section class="video-div">
+            <video autoplay muted loop>
+                <source src="./media/video/save tonight drumcam.mp4">
+            </video>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="./lessons.html"><img class="nav-image" src="./media/pics/lecture2.jpg"></a></li>
+                <p>lessons</p>
+                <li><a href="./live.html"><img class="nav-image" src="./media/pics/green_drumlites.jpg"></a></li>
+                <p>live</p>
+                <li><a href="./studio.html"><img class="nav-image" src="./media/pics/red_light.jpg"></a></li>
+                <p>studio</p>
+                <li><a href="./media.html"><img class="nav-image" src="./media/pics/rocknrodeo.jpg"></a></li>
+                <p>media</p>
+                <li><a href="./about.html"><img class="nav-image" src="./media/pics/tin-roof1.jpg"></a></li>
+                <p>about</p>
+            </ul>
+
+        </nav>
         
         `
     }
@@ -55,7 +91,7 @@ class Footer extends HTMLElement {
 
 // Define custom elements
 customElements.define('mobile-header', MobileHeader);
-customElements.defire('desktop-header', DesktopHeader);
+customElements.define('desktop-header', DesktopHeader);
 customElements.define('my-footer', Footer);
 
 // Define variables for DOM elements
