@@ -13,7 +13,9 @@ body {
     justify-content: center; */
 }
 
-
+#desktop-header-container {
+    visibility: hidden;
+}
 
 p {
     color: white;
@@ -194,6 +196,10 @@ a {
 
     #mobile-header {
         visibility: hidden;
+    }
+
+    #desktop-header-container {
+        visibility: visible;
     }
     
     #desktop-header {

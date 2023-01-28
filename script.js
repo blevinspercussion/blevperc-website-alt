@@ -34,6 +34,7 @@ class DesktopHeader extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
+        <section id="desktop-header-container">
         <header id="desktop-header">
         <div class="empty-div"></div>
         <div class="title-div">
@@ -71,6 +72,7 @@ class DesktopHeader extends HTMLElement {
             </ul>
 
         </nav>
+        </section>
         
         `
     }
