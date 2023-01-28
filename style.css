@@ -212,7 +212,7 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 90vw;
         margin: auto;
         border: none;
         overflow: hidden;
@@ -253,16 +253,17 @@ a {
         align-items: center;
         justify-content: center;
         max-width: 8vw;
+        margin: 1vw 0 1vw -0;
     }
 
     nav ul p {
         position: relative;
-        right: 9.5vw;
+        right: 7vw;
         top: 12vh;
     }
 
     .nav-image {
-        height: 18vh;
+        max-height: 18vh;
         border-radius: 10%;
         filter: grayscale(100%);
         transition: 0.5s;
