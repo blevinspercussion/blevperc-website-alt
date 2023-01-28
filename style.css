@@ -212,7 +212,6 @@ a {
     }
     
     #desktop-header {
-        display: block;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -236,6 +235,15 @@ a {
 
     .nav-hidden {
         display: none;
+    }
+
+    .abb-nav {
+        display: block;
+        margin-bottom: -10vh;
+    }
+
+    .abb-nav ul {
+        min-height: 20vh;
     }
 
     .abb-nav-text {
