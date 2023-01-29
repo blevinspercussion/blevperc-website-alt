@@ -192,8 +192,8 @@ video {
     font-size: 1.25em;
     width: 80vw;
     border: 2px solid var(--accent1);
-    background-image:url("./media/pics/green_drumlites.jpg");
-    background-size:cover;
+    /* background-image:url("./media/pics/green_drumlites.jpg");
+    background-size:cover; */
 }
 
 a {
