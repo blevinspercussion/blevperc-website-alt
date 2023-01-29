@@ -213,6 +213,10 @@ a {
         display: none;
     }
 
+    .container {
+        flex-direction: row;
+    }
+
     header {
         width: 100vw;
     }
@@ -224,6 +228,18 @@ a {
 
     .banner-container {
         display: none;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 90vw;
+    }
+    
+    .main-image {
+        max-width: 30vw;
     }
     
     #desktop-header {
