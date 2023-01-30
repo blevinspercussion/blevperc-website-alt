@@ -85,10 +85,9 @@ class AbbreviatedHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header id="desktop-header">
-        <div class="empty-div"></div>
         <div class="title-div">
             <a href="./index.html"><img class="logo" src="./media/pics/Blevins Percussion-logos_white.png"></a>
-            <h3>North Georgia's spot for expert drum lessons</h3>
+            <h3>North Georgia's premier spot for expert drum lessons</h3>
         </div>    
         <div class="vl"></div>
         <div class="title-div">
