@@ -219,6 +219,10 @@ a {
         flex-direction: row;
     }
 
+    .col-container {
+        flex-direction: column;
+    }
+
     header {
         width: 100vw;
     }
