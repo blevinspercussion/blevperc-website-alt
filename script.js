@@ -3,11 +3,11 @@
 //////////////////////////////////////////////
 
 class MobileHeader extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <header id='mobile-header'>
                 <a href="./index.html"><img class="logo" src="./media/pics/Blevins Percussion-logos_white.png"></a>
                 <div>
@@ -24,16 +24,16 @@ class MobileHeader extends HTMLElement {
                 </div>
             </header>
             
-    `
-    }
+    `;
+  }
 }
 
 class DesktopHeader extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
         <section id="desktop-header-container">
         <header id="desktop-header">
         <div class="empty-div"></div>
@@ -74,16 +74,16 @@ class DesktopHeader extends HTMLElement {
         </nav>
         </section>
         
-        `
-    }
+        `;
+  }
 }
 
 class AbbreviatedHeader extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
         <header id="desktop-header">
         <div class="title-div">
             <a href="./index.html"><img class="logo" src="./media/pics/Blevins Percussion-logos_white.png"></a>
@@ -107,61 +107,59 @@ class AbbreviatedHeader extends HTMLElement {
             <li><a class="abb-nav-text" href="./about.html">about</a></li>
         </ul>
     </nav>
-        `
-    }
+        `;
+  }
 }
 
 class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <p>
                 Website design for blevinspercussion.com copyright &copy; 2023 Adam B. Codes, <a href="https://adamb.codes">adamb.codes</a>
             </p>    
-        `
-    }
+        `;
+  }
 }
 
 // Define custom elements
-customElements.define('mobile-header', MobileHeader);
-customElements.define('desktop-header', DesktopHeader);
-customElements.define('abb-header', AbbreviatedHeader);
-customElements.define('my-footer', Footer);
+customElements.define("mobile-header", MobileHeader);
+customElements.define("desktop-header", DesktopHeader);
+customElements.define("abb-header", AbbreviatedHeader);
+customElements.define("my-footer", Footer);
 
 // Define variables for DOM elements
-const body = document.querySelector('body');
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.querySelector('nav');
+const body = document.querySelector("body");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.querySelector("nav");
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
-
 
 // Event handlers
 function handleSlideMenu() {
-    if (navMenu.classList.contains('nav-hidden')) {
-        navMenu.classList.remove('nav-hidden');
-        navMenu.classList.add('nav-shown');
-    } else {
-        navMenu.classList.remove('nav-shown');
-        navMenu.classList.add('nav-hidden');
-    }
+  if (navMenu.classList.contains("nav-hidden")) {
+    navMenu.classList.remove("nav-hidden");
+    navMenu.classList.add("nav-shown");
+  } else {
+    navMenu.classList.remove("nav-shown");
+    navMenu.classList.add("nav-hidden");
+  }
 }
 
 // Event listeners
 hamburger.addEventListener("click", () => {
-    handleSlideMenu();
+  handleSlideMenu();
 });
-
