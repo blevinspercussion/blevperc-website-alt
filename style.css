@@ -158,7 +158,7 @@ nav ul li {
 
 .nav-hidden {
   position: fixed;
-  right: -600px;
+  right: -1600px;
   transition: 0.5s;
 }
 
