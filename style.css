@@ -56,7 +56,7 @@ h3 {
   min-width: 35vw;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 15px;
   margin: 2em;
   padding: 1em;
@@ -138,8 +138,10 @@ nav {
   color: white;
   padding: 1em;
   margin: 1em;
-  min-width: 6em;
-  max-width: 80vw;
+  /* min-width: 6em;
+  max-width: 80vw; */
+  width: 100vw;
+  height: 100vh;
   max-height: fit-content;
   font-size: 2em;
   overflow: scroll;
@@ -195,7 +197,7 @@ video {
   border-radius: 15px;
   font-size: 1.25em;
   width: 95vw;
-  border: 2px solid var(--accent1);
+  /* border: 2px solid var(--accent1); */
   /* background-image:url("./media/pics/green_drumlites.jpg");
     background-size:cover; */
 }
@@ -371,7 +373,7 @@ a {
   }
 
   .vl {
-    border-left: 6px solid var(--accent1);
+    /* border-left: 6px solid var(--accent1); */
     height: 17vh;
   }
 
