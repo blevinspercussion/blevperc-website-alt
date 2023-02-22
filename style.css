@@ -267,7 +267,8 @@ a {
     justify-content: center;
     width: 90vw;
     min-height: 25vh;
-    margin: auto;
+    max-height: 25vh;
+    margin-top: auto;
     border: none;
     overflow: hidden;
   }
@@ -373,7 +374,7 @@ a {
   }
 
   .vl {
-    /* border-left: 6px solid var(--accent1); */
+    border-left: 6px solid var(--accent1);
     height: 17vh;
   }
 
