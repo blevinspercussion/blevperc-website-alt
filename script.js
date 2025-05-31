@@ -113,7 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const result = await response.json();
             
-            if (result.success) {
+            // Check if the response indicates success
+            if (response.ok && result.success) {
                 // Show success message
                 submitBtn.textContent = 'Message Sent!';
                 contactForm.reset();
@@ -124,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.disabled = false;
                 }, 3000);
             } else {
+                // If we get here, something went wrong
                 throw new Error(result.message || 'Something went wrong');
             }
         } catch (error) {
