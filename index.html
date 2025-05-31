@@ -1,52 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Adam Blevins - Professional Drummer & Percussionist</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
-    <title>Adam Blevins, Percussionist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <a href="./index.html"><img id="logo" src="./media/images/logo.png" alt="blevins percussion logo"></a>
-        <div class="hamburger-div">
-            <img id="hamburger" src="./media/icons/icons8-menu-rounded-90.png" />
-        </div>
-    </header>
-<nav> 
-    <ul id="nav-menu">
-        <li id="menu-services">services</li>
-        <li id="menu-bio">bio</li>
-        <li id="menu-testimonials">testimonials</li>
-        <li id="menu-contact">contact</li>
-    </ul>
-</nav>
-<video autoplay loop muted>
-    <source src="./media/video/save tonight drumcam.mp4" type="video/mp4">
-</video>
-<section class="text-body">
-    <p class="text-div">
-        My name is Adam Blevins and I am a professional drummer/percussionist residing in the greater Chattanooga Area where I teach 
-        private lessons out of my home studio, in addition to teaching percussion classes at several high and middle schools and gigging 
-        all over the southeast.
-    </p>
 
-    <p>
-        I have performed and taught students in virtually all areas of percussion and all styles of music from jazz drumset and orchestral 
-        percussion to pop/rock and country music. I have had many students attain their personal goals of passing auditions and playing 
-        in popular bands with some even pursuing careers as professional musicians and music educators.
-    </p>
-</section>
-<hr />
-<footer>
-    <p>
-        Web site design copyright &copy; 2023 Adam Blevins, <a href="https://adamb.codes">adamb.codes</a> 
-    </p>
-</footer>
-<script src="./script.js"></script>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="media/images/logo.png" alt="Adam Blevins Logo">
+            </div>
+            <button class="mobile-menu-btn">
+                <img src="media/icons/icons8-menu-rounded-90.png" alt="Menu">
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-video-background">
+            <video autoplay muted loop playsinline>
+                <source src="media/video/save tonight drumcam.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Adam Blevins</h1>
+            <h2>Professional Drummer & Percussionist</h2>
+            <p>Based in Chattanooga, TN | Teaching Studio in Rossville, GA</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button primary">Book a Lesson</a>
+                <a href="#media" class="cta-button secondary">Watch Performances</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Professional drummer and percussionist with extensive experience in performance and education.
+                    Offering private lessons and professional drumming services in the Chattanooga area.</p>
+
+                <p>Since 1996 I have taught hundreds of students in virtually all areas of percussion and styles of
+                    music, ranging from orchestral percussion, marching percussion and jazz drum set to contemporary
+                    drum set styles
+                    including: pop/rock, country, Latin/Afro-Cuban, heavy metal, fusion, and more.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Private Lessons</h3>
+                    <p>One-on-one drum instruction tailored to your skill level and goals.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Professional Drumming</h3>
+                    <p>Live performance and session work for various musical projects.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Studio Sessions</h3>
+                    <p>Professional recording services in my home studio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="carousel-container">
+                <button class="carousel-button prev" aria-label="Previous slide">
+                    <img src="media/icons/reshot-icon-bottom-left-arrow-ZCNYEM2RH3.svg" alt="Previous"
+                        class="arrow-icon">
+                </button>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <div class="media-item image-item">
+                                <div class="image-container">
+                                    <img src="media/photos/on_stage_wide.jpg" alt="Live Performance"
+                                        class="media-image">
+                                </div>
+                                <p class="media-caption">Live Performance at Music Instruction Studio teacher showcase,
+                                    Chattanooga, TN.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="media-item image-item">
+                                <div class="image-container">
+                                    <img src="media/photos/studio.jpg" alt="Studio Session" class="media-image">
+                                </div>
+                                <p class="media-caption">Private Lessons Studio</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="media-item image-item">
+                                <div class="image-container">
+                                    <img src="media/photos/lecture.jpg" alt="Educational Workshop" class="media-image">
+                                </div>
+                                <p class="media-caption">Educational Workshop and Masterclass at Chattanooga High School
+                                    Center for Creative Arts</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="media-item image-item">
+                                <div class="image-container">
+                                    <img src="media/photos/green_drumlites.jpg" alt="Live Performance with Lighting"
+                                        class="media-image">
+                                </div>
+                                <p class="media-caption">Live Performance at Sky Bar in Auburn, AL.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="media-item image-item">
+                                <div class="image-container">
+                                    <img src="media/photos/rocknrodeo.jpg" alt="Rock 'n' Rodeo Performance"
+                                        class="media-image">
+                                </div>
+                                <p class="media-caption">Live Performance at Rock 'n' Rodeo in Valdosta, GA.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next" aria-label="Next slide">
+                    <img src="media/icons/reshot-icon-bottom-left-arrow-ZCNYEM2RH3.svg" alt="Next"
+                        class="arrow-icon next-arrow">
+                </button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <h3>Allstar by Smash Mouth - Live at Sidebar in Birmingham, AL with the Matt Bennett Band</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/ppPn5eqvBvg"
+                            title="Allstar by Smash Mouth - Live at Sidebar in Birmingham, AL with the Matt Bennett Band"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Live performance at Rick's Bar in Starkville, MS</p>
+                </div>
+                <div class="video-item">
+                    <h3>What I Got by Sublime - Live at Skybar in Auburn, AL with Rebel</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/9jEDXLxjueQ"
+                            title="What I Got by Sublime - Live at Skybar in Auburn, AL with Rebel" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Live performance at Rick's Bar in Starkville, MS</p>
+                </div>
+                <div class="video-item">
+                    <h3>Mary Jane's List Dance by Tom Petty - Live at Tin Roof in Memphis, TN with the Matt Bennett Band
+                    </h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/la78_IZMPDI"
+                            title="Mary Jane's List Dance by Tom Petty - Live at Tin Roof in Memphis, TN with the Matt Bennett Band"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Live performance at Rick's Bar in Starkville, MS</p>
+                </div>
+                <div class="video-item">
+                    <h3>Don't Stop Believing by Journey - Live at the War Eagle Supper Club in Auburn, AL with the
+                        Spencer Maige and the Reckless</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/H2hMzx24WFk" title="All Summer Long - Kid Rock"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Live performance at Rick's Bar in Starkville, MS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9cf084f9-d35c-4bed-819b-1a0c736d5709">
+                    <input type="hidden" name="subject" value="New Contact Form Submission">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <input type="checkbox" name="botcheck" style="display: none;">
+                    
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Adam Blevins. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
