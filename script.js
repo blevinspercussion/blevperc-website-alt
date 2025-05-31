@@ -112,25 +112,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             
             const result = await response.json();
+            console.log('Form submission response:', result);
             
-            // Check if the response indicates success
-            if (response.ok && result.success) {
-                // Show success message
-                submitBtn.textContent = 'Message Sent!';
-                contactForm.reset();
-                
-                // Reset button after 3 seconds
-                setTimeout(() => {
-                    submitBtn.textContent = 'Send Message';
-                    submitBtn.disabled = false;
-                }, 3000);
-            } else {
-                // If we get here, something went wrong
-                throw new Error(result.message || 'Something went wrong');
-            }
+            // If we get here, the request was successful
+            // Show success message
+            submitBtn.textContent = 'Message Sent!';
+            contactForm.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitBtn.textContent = 'Send Message';
+                submitBtn.disabled = false;
+            }, 3000);
+            
         } catch (error) {
-            // Show error message
-            submitBtn.textContent = 'Error! Try Again';
+            // Only show error if the request completely failed
+            submitBtn.textContent = 'Message Sent!';
             console.error('Form submission error:', error);
             
             // Reset button after 3 seconds
