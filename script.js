@@ -102,9 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             const formData = new FormData(contactForm);
+            
             const response = await fetch(contactForm.action, {
                 method: 'POST',
-                body: formData
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
             });
             
             const result = await response.json();
