@@ -53,6 +53,16 @@ body {
     align-items: center;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+    transform: scale(1.05);
+}
+
 .logo img {
     height: 200px;
     width: auto;
